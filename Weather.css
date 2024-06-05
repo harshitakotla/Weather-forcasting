@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1a1a1a; 
+    color: #fdd302; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #333); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  header input {
+    width: 100%;
+    max-width: 280px;
+    padding: 10px;
+    border: 2px solid #fdd302;
+    background-color: #1a1a1a; 
+    color: #fdd302; 
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.2s ease-out;
+    margin-right: 10px; 
+  }
+  
+  header input::placeholder {
+    color: #fdd302; 
+  }
+  
+  header input:focus {
+    background-color: #333; 
+    border-color: #e6c102; 
+  }
+  
+  header .search-button {
+    padding: 10px 20px;
+    border: 2px solid #fdd302; 
+    background-color: #1a1a1a; 
+    color: #fdd302; 
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+  }
+  
+  header .search-button:hover {
+    background-color: #333;
+  }
+  
+  main {
+    flex: 1 1 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .location .city {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .location .date {
+    font-size: 16px;
+    color: #e6e6e6; 
+  }
+  
+  .current .temp {
+    font-size: 72px;
+    font-weight: 900;
+    margin: 20px 0;
+  }
+  
+  .current .temp span {
+    font-weight: 500;
+  }
+  
+  .current .weather {
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .current .hi-low {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .current .details {
+    margin-top: 20px;
+  }
+  
+  .current .details .pressure,
+  .current .details .humidity {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 5px 0;
+  }
+  
+  footer {
+    background-color: #1a1a1a;
+    color: #fdd302; 
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #fdd302; 
+  }
+  
